@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head%}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Aplicação Para Previsão de Plantas</h1>
+
+    <form action = "/predict" method = "POST">
+        <div>
+            <p>Digite o Valor de Comprimento da Sépala da Planta (Sepal Length) em cm:</p>
+            <input type = "text" name = "sepal_length" id = "sepal_length">
+        </div>
+        
+        <div>
+            <p>Digite o Valor de Largura da Sépala da Planta (Sepal Width) em cm:</p>
+            <input type = "text" name = "sepal_width" id = "sepal_width">
+        </div>
+
+        <div>
+            <p>Digite o Valor de Comprimento da Pétala da Planta (Petal Length) em cm:</p>
+            <input type = "text" name = "petal_length" id = "petal_length">
+        </div>
+
+        <div>
+            <p>Digite o Valor de Largura da Pétala da Planta (Petal Width) em cm:</p>
+            <input type = "text" name = "petal_width" id = "petal_width">
+        </div>
+
+        <input type = "submit" value = "Previsão">
+    </form>
+    <h2>Esta Planta é do Tipo: {{pred}}</h2>
+</div>
+{% endblock %}
