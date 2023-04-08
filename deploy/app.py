@@ -65,7 +65,7 @@ def predict():
 
 # Função main para execução do programa
 def main():
-    app.run(host = '0.0.0.0', port = 8080, debug = False)  
+    app.run(host = '0.0.0.0', port = 5580, debug = False)  
 
 
 # Execução do programa
